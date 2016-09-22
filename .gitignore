@@ -1,4 +1,10 @@
+# JetBrains
+.idea/
+out/
+
+# Java
 *.class
+
 *.log
 
 # sbt specific
