@@ -1,0 +1,8 @@
+l1 THE lion the cat the dog the is are ARE is
+l2 The LION the CAT the dog the is Are are is
+l3 The lion the cat the DOG the is are are is
+l4 The lion the cat tHe dog the Is are are is
+l5 The lion the cat the dog the is are are is
+l6 The LION the cat the dog the is are are is
+l7 The lion the CaT the dog the IS are are is
+l8 The lion the cat the dog the is ARE are is
