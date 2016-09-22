@@ -1,0 +1,5 @@
+//Réponses exercice1
+
+val rdd = sc.textFile("/home/raphael/Bureau/Spark/sp/README.md").flatMap(line=>line.split(" ")).map(_.toLowerCase()).map(word => (word,1)).reduceByKey(_ + _)
+val counts = rdd.toDF()
+val orderedCount = counts.orderBy(desc("_2"))
