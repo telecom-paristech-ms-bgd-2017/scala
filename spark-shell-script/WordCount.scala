@@ -23,7 +23,7 @@ val countsWithoutCaseTmp = textFile.map(word => (word.toLowerCase()))
 // print RDD
 countsWithoutCaseTmp.collect().foreach(println)
 // map/reduce to count the number of occurrences of each word
-val countsWithoutCase = textFile.flatMap(line => line.split(" ")).map(word => (word.toLowerCase(), 1)).reduceByKey(_ + _)
+val countsWithoutCase = countsWithoutCaseTmp.map(word => (word, 1)).reduceByKey(_ + _)
 // transform to sql dataframe
 val dfWithoutCase = countsWithoutCase.toDF(columnNames: _*)
 dfWithoutCase.createOrReplaceTempView("word_count_without_case")
